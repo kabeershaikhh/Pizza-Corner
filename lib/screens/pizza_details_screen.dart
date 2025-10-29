@@ -16,8 +16,8 @@ class _PizzaDetailsScreenState extends State<PizzaDetailsScreen> {
 
   double get totalPrice {
     double base = widget.pizza.price;
-    if (selectedSize == 'Small') base -= 1.0;
-    if (selectedSize == 'Large') base += 2.0;
+    if (selectedSize == 'Small') base -= 200.0;
+    if (selectedSize == 'Large') base += 400.0;
     return base * quantity;
   }
 
